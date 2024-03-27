@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    height: 100vh;
+}
+
+.container .navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(175, 174, 174);
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.container .navbar .menu ul{
+    display: flex;
+    list-style: none;
+}
+
+.container .navbar .menu ul li{
+    padding: 8px;
+}
+
+.logo{
+    font-size: 27px;
+    font-weight: bold;
+    color: orangered;
+}
+
+ul li:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar-icon-toggle{
+    display: none;
+}
+
+/* FIXED */
+@media only screen and (max-width: 40em) {
+    html{
+        font-size: 60%;
+    }
+
+    .container .navbar .menu ul{
+        position: absolute;
+        right: 0;
+        top: 0;
+        flex-direction: column;
+        width: 50%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        z-index: -1;
+        background-image: linear-gradient(rgb(255, 134, 91), rgb(250, 225, 216));
+        transform: translateX(100%);
+        transition: ease-in-out 0.5s;
+    }
+
+    .navbar .menu ul li{
+        margin-bottom: 50px;
+    }
+
+    .navbar .menu ul.slide{
+        transform: translateX(0);
+        transition: ease-in-out 0.5s;
+    }
+
+    .navbar-icon-toggle span {
+        background-color: orangered;
+        display: block;
+        width: 25px;
+        height: 3px;
+        border-radius: 3px;
+    }
+
+    .navbar-icon-toggle{
+        display: flex;
+        flex-direction: column;
+        height: 20px;
+        justify-content: space-between;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .navbar-icon-toggle input{
+        position: absolute;
+        width: 26px;
+        height: 25px;
+        opacity: 0;
+        cursor: pointer;
+    }
+}

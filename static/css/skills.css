@@ -1,0 +1,65 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.profile-content-skills{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(255, 192, 169), white);
+    flex-direction: column;
+}
+
+.skills-imgItem{
+    padding: 18px;
+    display: flex;
+}
+
+/* BREAKPOINT */
+/* Small devices such as large phones (640px and up) */
+@media only screen and (max-width: 40em) {
+    html{
+        font-size: 60%;
+    }
+
+    .skills-imgItem .skills-img{
+        width: 30%;
+    }
+
+    .skills-imgItem{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .profile-content-skills p{
+        text-align: center;
+    }
+
+    .profile-content-skills{
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 41em) and (max-width: 64em) {
+    html{
+        font-size: 80%;
+    }
+    
+    .skills-imgItem{
+        width: 70%;
+    }
+
+    .profile-content-skills{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,52 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.card-body-education{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 30px;
+}
+
+.profile-content-education{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(white, rgb(255, 192, 169));
+    flex-direction: column;
+}
+
+.profile-content-education .card1-education{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-content-education .card2-education{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 40em) {
+    html{
+        font-size: 60%;
+    }
+
+    .profile-content-education p{
+        text-align: center;
+    }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 41em) and (max-width: 64em) {
+    html{
+        font-size: 80%;
+    }
+
+    .keterangan{
+        text-align: center;
+    }
+}

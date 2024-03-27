@@ -1,0 +1,86 @@
+{% extends 'layout/base.html' %}
+{% block content %}
+  <div class="profile-content" id="profile-content">
+    <div class="paragraph" style="--d: 0s">
+      <h1>Hallo Semuanya</h1>
+      <div class="typing-text-body">
+        <h3>Saya Adalah</h3>
+        <h3 class="typing-text"></h3>
+      </div>
+      <p>Nama Saya Muhammad Rayhan, Saya Berasal Dari Kalimantan Timur dan Saya Berkuliah di Universitas Muslim Indonesia Fakultas Ilmu Komputer, Program Studi Teknik Informatika. Saya Meminati Bidang Web Developer.</p>
+    </div>
+    <img src="{{ url_for('static', filename = 'img/index/photo-profile-content.png') }}" alt="" height="460px" width="470px" style="--d: 0s" class="img-index" />
+  </div>
+  <div class="profile-content-education" id="profile-content-education">
+    <div class="title-content" data-aos="fade-right">
+      <h2>My Education Background</h2>
+    </div>
+    <div class="card-body-education" data-aos="fade-right">
+      <div class="card1-education">
+        <img src="{{ url_for('static', filename = 'img/education/education-umi-logo-removebg-preview.png') }}" alt="" width="100px" height="120px" class="img-education" />
+      </div>
+      <div class="card2-education">
+        <img src="{{ url_for('static', filename = 'img/education/education-fikomlogo.jpeg') }}" alt="" width="100px" height="120px" class="img-education" />
+      </div>
+    </div>
+    <div class="keterangan" style="--d: 0s" data-aos="fade-right">
+      <p>Saya Merupakan Mahasiwa Dari Universitas Muslim Indonesia, Fakultas Ilmu Komputer, Program Studi Teknik Informatika.</p>
+    </div>
+  </div>
+  <div class="profile-content-skills" id="profile-content-skills">
+    <h2 data-aos="zoom-in">Skill Background</h2>
+    <div class="skills-imgItem" data-aos="zoom-in">
+      <img src="{{ url_for('static', filename = 'img/skills/skills-htmlIcon.png') }}" alt="" width="100px" height="120px" class="skills-img" />
+      <img src="{{ url_for('static', filename = 'img/skills/skills-cssIcon.png') }}" alt="" width="100px" height="120px" class="skills-img" />
+      <img src="{{ url_for('static', filename = 'img/skills/skills-pythonIcon.png') }}" alt="" width="100px" height="120px" class="skills-img" />
+      <img src="{{ url_for('static', filename = 'img/skills/skills-flaskIcon-2.png') }}" alt="" width="100px" height="120px" class="skills-img" />
+      <img src="{{ url_for('static', filename = 'img/skills/skills-mongodbIcon.png') }}" alt="" width="100px" height="120px" class="skills-img" />
+    </div>
+    <p data-aos="zoom-in">Saya Memahami Beberapa Skill Seperti HTML5, CSS4, Basic Pyhton, Flask Framework, Dan MongoDB</p>
+  </div>
+  <div class="profile-content-experience" id="profile-content-experience">
+    <h1 data-aos="zoom-in">Experience</h1>
+    <div class="experience-cardMain" data-aos="zoom-in">
+      <div class="experience-card">
+        <div class="experience-cardLogo">
+          <img src="{{ url_for('static', filename = 'img/experience/experience-makasssarCodingLOGO.jpeg') }}" alt="" height="130px" width="130px" />
+        </div>
+        <div class="experience-cardAbout">
+          <p>Saya Merupakan Lulusan Makassar Coding Dengan Konsentrasi Fullstack Web Development</p>
+        </div>
+      </div>
+      <div class="experience-card" data-aos="zoom-in">
+        <div class="experience-cardLogo">
+          <img src="{{ url_for('static', filename = 'img/experience/experience-gdscLOGO.jpeg') }}" alt="" height="130px" width="130px" />
+        </div>
+        <div class="experience-cardAbout">
+          <p>Saya Merupakan Member Dari GDSC Universitas Muslim Indonesia</p>
+        </div>
+      </div>
+      <div class="experience-card" data-aos="zoom-in">
+        <div class="experience-cardLogo">
+          <img src="{{ url_for('static', filename = 'img/experience/experience-itboxLOGO.webp') }}" alt="" height="130px" width="130px" />
+        </div>
+        <div class="experience-cardAbout">
+          <p>Saya Merupakan Lulusan ITBOX Dengan Javascript Basic Dan MySQL Basic</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="profile-content-contact" id="profile-content-contact">
+    <h1 data-aos="zoom-in">Contact</h1>
+    <p>Klik Logo dibawah</p>
+    <div class="contact-cardMain" data-aos="zoom-in">
+      <div class="contact-card">
+        <div class="contact-cardLogo">
+          <a href="https://www.instagram.com/rayhanxing/"><img src="{{ url_for('static', filename = 'img/contact/contact-instagramLogo.png') }}" alt="" height="130px" width="130px" /></a>
+        </div>
+      </div>
+      <div class="contact-card" data-aos="zoom-in">
+        <div class="contact-cardLogo">
+          <a href="https://www.linkedin.com/in/rayhan18pt/"><img src="{{ url_for('static', filename = 'img/contact/contact-linkedinLogo.png') }}" alt="" height="130px" width="130px" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
